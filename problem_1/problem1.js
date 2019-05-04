@@ -3,14 +3,14 @@
 
 function findSumOfMultiples()
 {
-	// time: 0 seconds.
+	// time: 0.001 seconds.
 	
 	var d0 = new Date();
-	var sum =0;
+	var sum = 0;
 	
-	for(var i=0; i<1000; i++)
+	for(var i  =0; i < 1000; i++)
 	{
-		if(i%3==0 || i%5==0)
+		if(i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
 		}
