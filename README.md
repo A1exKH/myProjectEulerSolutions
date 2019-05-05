@@ -1,2 +1,2 @@
 # myProjectEulerSolutions
-This repo contains solutions my code for projecteuler problems
+This repo contains my code solutions for projecteuler problems
