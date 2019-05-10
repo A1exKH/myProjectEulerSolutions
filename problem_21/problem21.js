@@ -1,22 +1,6 @@
 // Problem 21. Amicable numbers
 // Evaluate the sum of all the amicable numbers under 10000.
 
-function findProperDivisorsSum(num)
-{
-	var proterDivArray = [];
-	var sum = 0;
-	
-	for(var i=1; i<num; i++)
-	{
-		if(num%i == 0)
-		{
-			proterDivArray.push(i);
-			sum += i;
-		}
-	}
-	return sum;
-}
-
 function findSumOfAmicableNumbers(num)
 {
 	// time: 0.501 seconds.
@@ -47,4 +31,21 @@ function findSumOfAmicableNumbers(num)
 	console.log("time: " + (d1.getTime() - d0.getTime())/1000 + " seconds.");
 	console.log("Answer: " + sum);
 }
+
+function findProperDivisorsSum(num)
+{
+	var proterDivArray = [];
+	var sum = 0;
+	
+	for(var i=1; i<num; i++)
+	{
+		if(num%i == 0)
+		{
+			proterDivArray.push(i);
+			sum += i;
+		}
+	}
+	return sum;
+}
+
 findSumOfAmicableNumbers(10000);
