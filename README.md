@@ -1,2 +1,2 @@
-# myProjectEulerSolutions
-This repo contains my code solutions for projecteuler problems
+# About this repo:
+This repo contains my JavaScript code solutions for project Euler.
