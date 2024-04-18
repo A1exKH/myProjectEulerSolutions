@@ -27,6 +27,20 @@ Smallest multiple
 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
+## Problem #6. 
+Sum square difference
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+## Problem #7. 
+10001st prime
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the 10 001st prime number?
+
+
+## Problem #8. 
+Largest product in a series
+Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
+
 ## Problem #10. 
 Summation of primes
 Find the sum of all the primes below two million.
