@@ -59,3 +59,26 @@ What is the greatest product of four adjacent numbers in the same direction (up,
 ## Problem #12. 
 Highly divisible triangular number.
 What is the value of the first triangle number to have over five hundred divisors?
+
+
+## Problem #14. 
+Longest Collatz sequence.
+It can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.
+Which starting number, under one million, produces the longest chain?
+NOTE: Once the chain starts the terms are allowed to go above one million.
+
+
+## Problem #18. 
+Maximum path sum.
+Find the maximum total from top to bottom of the triangle below:
+
+
+## Problem #21. 
+Amicable numbers.
+Evaluate the sum of all the amicable numbers under 10000.
+
+
+## Problem #22. 
+Names scores.
+For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.
+What is the total of all the name scores in the file?
