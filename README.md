@@ -41,6 +41,21 @@ What is the 10 001st prime number?
 Largest product in a series
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
+
+## Problem 9. 
+Special Pythagorean triplet
+There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+Find the product abc.
+
 ## Problem #10. 
 Summation of primes
 Find the sum of all the primes below two million.
+
+## Problem 11. 
+Largest product in a grid
+What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
+
+
+## Problem 12. 
+Highly divisible triangular number
+What is the value of the first triangle number to have over five hundred divisors?
