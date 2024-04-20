@@ -3,16 +3,16 @@ This repo contains my JavaScript code solutions for project Euler.
 
 # List of tasks:
 ## Problem #1. 
-Multiples of 3 and 5
+Multiples of 3 and 5.
 Find the sum of all the multiples of 3 or 5 below 1000.
 
 ## Problem #2. 
-Even Fibonacci numbers
+Even Fibonacci numbers.
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 
 ## Problem #3. 
-Largest prime factor 
+Largest prime factor.
 The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ?
 
@@ -23,39 +23,39 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 
 ## Problem #5. 
-Smallest multiple
+Smallest multiple.
 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 ## Problem #6. 
-Sum square difference
+Sum square difference.
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
 ## Problem #7. 
-10001st prime
+10001st prime.
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
 What is the 10 001st prime number?
 
 
 ## Problem #8. 
-Largest product in a series
+Largest product in a series.
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
 
-## Problem 9. 
-Special Pythagorean triplet
+## Problem #9. 
+Special Pythagorean triplet.
 There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 
 ## Problem #10. 
-Summation of primes
+Summation of primes.
 Find the sum of all the primes below two million.
 
-## Problem 11. 
-Largest product in a grid
+## Problem #11. 
+Largest product in a grid.
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
 
-## Problem 12. 
-Highly divisible triangular number
+## Problem #12. 
+Highly divisible triangular number.
 What is the value of the first triangle number to have over five hundred divisors?
