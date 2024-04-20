@@ -60,6 +60,9 @@ What is the greatest product of four adjacent numbers in the same direction (up,
 Highly divisible triangular number.
 What is the value of the first triangle number to have over five hundred divisors?
 
+## Problem 13. 
+Large Sum
+Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
 
 ## Problem #14. 
 Longest Collatz sequence.
