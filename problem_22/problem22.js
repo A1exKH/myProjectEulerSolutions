@@ -12,22 +12,22 @@ function findNamesScores()
 	var sortedTestDataArray = testDataArray.sort();
 	var englishAphabet = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 	var totalCounter = 0;
-	
-	
-	for(var i=0; i < sortedTestDataArray.length; i++)
+
+
+	for (var i = 0; i < sortedTestDataArray.length; i++)
 	{
 		var wordStr = sortedTestDataArray[i];
 		var wordCounter = 0;
-		for(var letter = 0; letter < wordStr.length; letter++)
+		for (var letter = 0; letter < wordStr.length; letter++)
 		{
 			wordCounter += englishAphabet.indexOf(wordStr[letter]);
 		}
-		totalCounter += wordCounter * (i+1); 
+		totalCounter += wordCounter * (i + 1); 
 	}
 		
 	console.log("Answer: " + totalCounter);	
 	var d1 = new Date();
-	console.log("time: " + (d1.getTime() - d0.getTime())/1000 + " seconds.");
+	console.log("time: " + (d1.getTime() - d0.getTime()) / 1000 + " seconds.");
 }
 
 findNamesScores();
