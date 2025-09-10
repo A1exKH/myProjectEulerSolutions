@@ -10,7 +10,7 @@ function findSumSquareDifference(num)
 	var squareOfSum = 0;
 	var sum = 0;
 	
-	for(var i = 1; i <= num; i++)
+	for (var i = 1; i <= num; i++)
 	{
 		sum += i;
 		sumOfSquares += Math.pow(i, 2);
