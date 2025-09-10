@@ -11,11 +11,11 @@ function findLongestCollatzSequence()
     var maxCounter = 0;
     var maxCounterNumber = 0;
     var tempCounter = 0;
-    
-    for(var i=1000000; i>1; i--)
+
+    for (var i = 1000000; i > 1; i--)
     {
         tempCounter = findNumberOfElements(i);
-        if(maxCounter < tempCounter)
+        if (maxCounter < tempCounter)
         {
             maxCounter = tempCounter;
             maxCounterNumber = i;
@@ -23,28 +23,28 @@ function findLongestCollatzSequence()
     }
     var d1 = new Date();
     console.log("Answer: " + maxCounterNumber);
-    console.log("time: " + (d1.getTime() - d0.getTime())/1000 + " seconds.");
+    console.log("time: " + (d1.getTime() - d0.getTime()) / 1000 + " seconds.");
 }
 
 function findNumberOfElements(num)
 {
     var result = num;
     var counter = 0;
-    
-    while(result !== 1)
+
+    while (result !== 1)
     {
-        if(result%2 ==0)
+        if (result % 2 == 0)
         {
-            result = result/2; // (n is even)
+            result = result / 2; // (n is even)
             counter++;
         }
         else
         {
-            result = 3*result + 1 ;// (n is odd)
+            result = 3 * result + 1; // (n is odd)
             counter++;
         }
     }
-    return counter+1;
+    return counter++;
 }
 
 findLongestCollatzSequence();
