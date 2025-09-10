@@ -11,20 +11,20 @@ function findSumOfEvenFibonacci()
 	var newElem = 0;
 	var elemNumber = 3;
 	
-	while(newElem < 4000000)
+	while (newElem < 4000000)
 	{
 
 		newElem = fibonacciArray[elemNumber - 1] + fibonacciArray[elemNumber - 2];
-		if(newElem < 4000000)
+		if (newElem < 4000000)
 		{
 			fibonacciArray.push(newElem);
 			elemNumber++;
 		}	
 	} 
 	
-	for(var i = 0; i < fibonacciArray.length; i++)
+	for (var i = 0; i < fibonacciArray.length; i++)
 	{
-		if(fibonacciArray[i] % 2 == 0)
+		if (fibonacciArray[i] % 2 == 0)
 		{
 			sumOfEven += fibonacciArray[i];
 		}
