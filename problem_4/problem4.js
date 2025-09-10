@@ -9,15 +9,14 @@ function findLargestPalindromeProduct()
 	
 	var d0 = new Date();
 	var largestPalindrome = 0;
-	for(var i = 1000; i > 99; i--)
+	for (var i = 1000; i > 99; i--)
 	{
-		for(var x = 1000; x > 99; x--)
+		for (var x = 1000; x > 99; x--)
 		{
-			var product = i * x;
-			
-			if(isPalindromicNumber(product))
+			var product = i * x;			
+			if (isPalindromicNumber(product))
 			{
-				if(largestPalindrome < product)
+				if (largestPalindrome < product)
 				{	
 					largestPalindrome = product;
 				}
@@ -39,7 +38,7 @@ function isPalindromicNumber(num)
 {
 	num_str = num.toString();
 	reversed_num_str = reverse(num_str);
-	if(num_str == reversed_num_str)
+	if (num_str == reversed_num_str)
 	{
 		return true;
 	}
