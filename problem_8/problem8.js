@@ -12,7 +12,7 @@ function findLargestProductInSeries(num)
 	
 	for (var i = 0; i < testData.length; i++)
 	{
-		if(i < (testData.length - num))
+		if (i < (testData.length - num))
 		{
 			var temp_product = 1;
 			var temp_arr = [];
@@ -22,7 +22,7 @@ function findLargestProductInSeries(num)
 				temp_arr.push(number);
 				temp_product *= number;
 			}
-			if(maxProduct < temp_product)
+			if (maxProduct < temp_product)
 			{
 				maxProduct = temp_product;
 				max_arr = temp_arr;
