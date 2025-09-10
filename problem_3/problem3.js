@@ -8,17 +8,17 @@ function findLargestPrimeFactor(number)
 	
 	var d0 = new Date();
 	factorsArray = [];
-	for(var n = number; n > 0; n--)
+	for (var n = number; n > 0; n--)
 	{
-		if(number % n == 0)
+		if (number % n == 0)
 		{
-			if(isPrime(n))
+			if (isPrime(n))
 			{
 				factorsArray.push(n);
 			}
 			
 		}
-		if(factorsArray.length==1)
+		if (factorsArray.length == 1)
 		{
 			break;
 		}
@@ -30,18 +30,18 @@ function findLargestPrimeFactor(number)
 
 function isPrime(num)
 {
-	if(num == 0 || num == 1)
+	if (num == 0 || num == 1)
 	{
 		return false;
 	}
 	
 	var factorsCounter = 0;
-	for(var i  =1; i < num; i++)
+	for (var i  = 1; i < num; i++)
 	{
-		if(num % i == 0)
+		if (num % i == 0)
 		{
 			factorsCounter++;
-			if(factorsCounter > 1)
+			if (factorsCounter > 1)
 			{
 				return false;
 			}
