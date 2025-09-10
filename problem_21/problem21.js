@@ -9,18 +9,18 @@ function findSumOfAmicableNumbers(num)
 	var amicableNumbersArray = [];
 	var b = 0;
 	var sum = 0;
-	
-	for(var a=1; a<num; a++)
+
+	for (var a = 1; a < num; a++)
 	{
 		b = findProperDivisorsSum(a);
-		if(findProperDivisorsSum(b) == a && a !=b)
+		if (findProperDivisorsSum(b) == a && a != b)
 		{
-			if(!amicableNumbersArray.includes(a))
+			if (!amicableNumbersArray.includes(a))
 			{
 				amicableNumbersArray.push(a);
 				sum += a;
 			}
-			if(!amicableNumbersArray.includes(b))
+			if (!amicableNumbersArray.includes(b))
 			{
 				amicableNumbersArray.push(b);
 				sum += b;
@@ -28,20 +28,20 @@ function findSumOfAmicableNumbers(num)
 		}
 	}
 	var d1 = new Date();
-	console.log("time: " + (d1.getTime() - d0.getTime())/1000 + " seconds.");
+	console.log("time: " + (d1.getTime() - d0.getTime()) / 1000 + " seconds.");
 	console.log("Answer: " + sum);
 }
 
 function findProperDivisorsSum(num)
 {
-	var proterDivArray = [];
+	var properDivArray = [];
 	var sum = 0;
-	
-	for(var i=1; i<num; i++)
+
+	for (var i = 1; i < num; i++)
 	{
-		if(num%i == 0)
+		if (num % i == 0)
 		{
-			proterDivArray.push(i);
+			properDivArray.push(i);
 			sum += i;
 		}
 	}
