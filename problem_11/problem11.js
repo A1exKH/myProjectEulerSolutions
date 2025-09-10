@@ -13,12 +13,12 @@ function findLargestProductInGrid(gridSize)
 	var productFrame = 4;
 	var maxIndex = gridSize-productFrame;
 	var theBiggest = 0;
-	
-	for(var x=0; x<gridSize; x++)
+
+	for (var x = 0; x < gridSize; x++)
 	{
 		gridArray.push(new Array());
 		//console.log(gridArray);
-		for(var y=0; y<gridSize; y++)
+		for (var y = 0; y < gridSize; y++)
 		{
 			gridArray[x].push(Number(testDataArray[counter]));
 			counter++;
@@ -47,11 +47,11 @@ function findLargestProductInGrid(gridSize)
 	var backwardDiagonalMaxArray = [];
 	var backwardDiagonalTempArray = [];
 		
-	for(var x=0; x<gridSize; x++)
+	for (var x = 0; x < gridSize; x++)
 	{
-		for(var y=0; y<gridSize; y++)
+		for (var y = 0; y < gridSize; y++)
 		{
-			if(x <= maxIndex && y <= maxIndex)
+			if (x <= maxIndex && y <= maxIndex)
 			{
 				backwardDiagonalTempArray = new Array();
 				var a = gridArray[x][y];
@@ -65,14 +65,14 @@ function findLargestProductInGrid(gridSize)
 				
 				backwardDiagonalTempProduct = (a * b * c * d); 
 				// console.log("backwardDiagonalTempProduct: " + backwardDiagonalTempProduct + " = " + a + ", " + b + ", " + c + ", " + d);
-				if(backwardDiagonalMaxProduct < backwardDiagonalTempProduct)
+				if (backwardDiagonalMaxProduct < backwardDiagonalTempProduct)
 				{
 					backwardDiagonalMaxProduct = backwardDiagonalTempProduct;
 					backwardDiagonalMaxArray = backwardDiagonalTempArray;
 				}
 			}
-			
-			if(x <= maxIndex && y <= maxIndex)
+
+			if (x <= maxIndex && y <= maxIndex)
 			{
 				forwardDiagonalTempArray = new Array();
 				var a = gridArray[x+3][y];
@@ -86,14 +86,14 @@ function findLargestProductInGrid(gridSize)
 				
 				forwardDiagonalTempProduct = (a * b * c * d); 
 				// console.log("forwardDiagonalTempProduct: " + forwardDiagonalTempProduct + " = " + a + ", " + b + ", " + c + ", " + d);
-				if(forwardDiagonalMaxProduct < forwardDiagonalTempProduct)
+				if (forwardDiagonalMaxProduct < forwardDiagonalTempProduct)
 				{
 					forwardDiagonalMaxProduct = forwardDiagonalTempProduct;
 					forwardDiagonalMaxArray = forwardDiagonalTempArray;
 				}
 			}
-			
-			if(y <= maxIndex)
+
+			if (y <= maxIndex)
 			{
 				horizTempArray = new Array();
 				var a = gridArray[x][y];
@@ -107,14 +107,14 @@ function findLargestProductInGrid(gridSize)
 				
 				horizTempProduct = (a * b * c * d); 
 				// console.log("horizTempProduct: " + horizTempProduct + " = " + a + ", " + b + ", " + c + ", " + d);
-				if(horizMaxProduct < horizTempProduct)
+				if (horizMaxProduct < horizTempProduct)
 				{
 					horizMaxProduct = horizTempProduct;
 					horizMaxArray = horizTempArray;
 				}
 			}
-			
-			if(x <= maxIndex)
+
+			if (x <= maxIndex)
 			{
 				verTempArray = new Array();
 				var a = gridArray[x][y];
@@ -128,7 +128,7 @@ function findLargestProductInGrid(gridSize)
 				
 				verTempProduct = (a * b * c * d); 
 				// console.log("verTempProduct: " + verTempProduct + " = " + a + ", " + b + ", " + c + ", " + d);
-				if(verMaxProduct < verTempProduct)
+				if (verMaxProduct < verTempProduct)
 				{
 					verMaxProduct = verTempProduct;
 					verMaxArray = verTempArray;
@@ -136,26 +136,26 @@ function findLargestProductInGrid(gridSize)
 			}
 		}
 	}
-	if(theBiggest < horizMaxProduct)
+	if (theBiggest < horizMaxProduct)
 	{
 		theBiggest = horizMaxProduct;
 	} 
-	if(theBiggest < verMaxProduct)
+	if (theBiggest < verMaxProduct)
 	{
 		theBiggest = verMaxProduct;
 	} 
-	if(theBiggest < forwardDiagonalMaxProduct)
+	if (theBiggest < forwardDiagonalMaxProduct)
 	{
 		theBiggest = forwardDiagonalMaxProduct;
 	}
-	if(theBiggest < backwardDiagonalMaxProduct)
+	if (theBiggest < backwardDiagonalMaxProduct)
 	{
 		theBiggest = backwardDiagonalMaxProduct;
 	}
 	
 	console.log("Answer: " + theBiggest);
 	var d1 = new Date();
-	console.log("time: " + (d1.getTime() - d0.getTime())/1000 + " seconds.");
+	console.log("time: " + (d1.getTime() - d0.getTime()) / 1000 + " seconds.");
 }
 
 findLargestProductInGrid(20);
