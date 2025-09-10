@@ -13,10 +13,10 @@ function findMaximumPathSum()
 	var testArr = [];
 	var numberOfRows = 15;
 
-	for(var x = 0; x < numberOfRows; x++)
+	for (var x = 0; x < numberOfRows; x++)
 	{	
 		var tempArray = [];
-		for(var y = 0; y <= counter; y++)
+		for (var y = 0; y <= counter; y++)
 		{
 			tempArray.push(Number(testData.shift()));
 			
@@ -25,27 +25,27 @@ function findMaximumPathSum()
 		counter++;
 	}
 	
-	for(var x = testArr.length - 1; x > 0; x--)
+	for (var x = testArr.length - 1; x > 0; x--)
 	{
 		for(var y = 0; y < testArr[x].length; y++)
 		{
-			var sum1 = testArr[x-1][y] + testArr[x][y];
-			var sum2 = testArr[x-1][y] + testArr[x][y+1];
-			
-			if(sum1 < sum2)
+			var sum1 = testArr[x - 1][y] + testArr[x][y];
+			var sum2 = testArr[x - 1][y] + testArr[x][y + 1];
+
+			if (sum1 < sum2)
 			{
-				testArr[x-1][y] = sum2;
+				testArr[x - 1][y] = sum2;
 			}
 			else
 			{
-				testArr[x-1][y] = sum1;
+				testArr[x - 1][y] = sum1;
 			}
 		}
 		testArr.pop();
 	}
 	console.log("Answer: " + testArr[0][0]);
 	var d1 = new Date();
-	console.log("time: " + (d1.getTime() - d0.getTime())/1000 + " seconds.");
+	console.log("time: " + (d1.getTime() - d0.getTime()) / 1000 + " seconds.");
 }
 
 findMaximumPathSum();
