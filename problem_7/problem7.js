@@ -10,13 +10,13 @@ function findPrime(num)
 	var primeArray = [];
 	var i = 2;
 
-	while(true)
+	while (true)
 	{
-		if(isPrime(i))
+		if (isPrime(i))
 		{
 			primeArray.push(i);
 		}
-		if(primeArray.length == num)
+		if (primeArray.length == num)
 		{
 			break;
 		}
@@ -31,19 +31,18 @@ function findPrime(num)
 function isPrime(num)
 {
 	var factorsCounter = 0;
-	for(var i = 1; i < num; i++)
+	for (var i = 1; i < num; i++)
 	{
-		if(num % i == 0)
+		if (num % i == 0)
 		{
 			factorsCounter++;
-			if(factorsCounter > 1)
+			if (factorsCounter > 1)
 			{
 				return false;
 				break;
 			}
 		}
 	}
-
 	return true;
 }
 
