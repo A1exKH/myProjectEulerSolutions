@@ -11,9 +11,9 @@ function findHighlyDivisibleTriangularNumber(num)
 	var tempNumber = 0;
 	var tempNumberOfFactors = 0;
 	
-	while(true)
+	while (true)
 	{
-		if(maxNumberOfFactors >= num)
+		if (maxNumberOfFactors >= num)
 		{
 			console.log("Answer: " + tempNumber);
 			break;
@@ -28,13 +28,13 @@ function findHighlyDivisibleTriangularNumber(num)
 		
 	}
 	var d1 = new Date();
-	console.log("time: " + (d1.getTime() - d0.getTime())/1000 + " seconds.");
+	console.log("time: " + (d1.getTime() - d0.getTime()) / 1000 + " seconds.");
 }
 
 function findTriangleNumber(num)
 {
 	var sum = 0;
-	for(var i = 0; i <= num; i++)
+	for (var i = 0; i <= num; i++)
 	{
 		sum += i;
 	}
@@ -44,9 +44,9 @@ function findTriangleNumber(num)
 function findNumberOfFactors(num)
 {
 	var numberOfFactors = 1;
-	for(var i = 0; i < num; i++)
+	for (var i = 0; i < num; i++)
 	{
-		if(num % i == 0)
+		if (num % i == 0)
 		{
 			numberOfFactors++;
 		}
